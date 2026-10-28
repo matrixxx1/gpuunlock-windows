@@ -1,0 +1,32 @@
+# Private machine inputs and locally generated configuration
+local/
+*.bin
+*.rom
+*.efi
+*.EFI
+
+# Build and test output
+build/
+*.o
+*.obj
+*.a
+*.exe
+*.map
+*.su
+*.log
+__pycache__/
+*.pyc
+
+# Runtime captures and machine-specific receipts
+AD103M-UNLOCK/
+RUN*.TXT
+DIAG*.TXT
+*-status.json
+*-capture-*/
+
+# Editor and OS files
+.vs/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
