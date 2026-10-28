@@ -228,7 +228,7 @@ EFI_STATUS GuBootChoose(BOOLEAN *unlock,BOOLEAN default_unlock) {
             L"  Press L:       keep GPU LOCKED, then start normal Windows\r\n\r\n"
             L"  The saved default is used after 20 seconds.\r\n"
             L"  Press U or L to override the saved default for this boot.\r\n"
-            L"  Do not repeatedly press U; one keypress is sufficient.\r\n\r\n");
+            L"  Project: https://github.com/matrixxx1/gpuunlock-windows\r\n\r\n");
   if(Table->ConOut&&Table->ConOut->SetAttribute)
     (VOID)Table->ConOut->SetAttribute(Table->ConOut,EFI_LIGHTGRAY|EFI_BACKGROUND_BLACK);
   GuBootSay(default_unlock?L"  SAVED DEFAULT: UNLOCK DURING BOOT\r\n\r\n":
